@@ -19,5 +19,5 @@ function! _EscapeText_fut(text)
     let l:lines = Remove_line_comments(l:lines)
     let l:outraw = Unlines(l:lines)
     let l:outtrimmed = substitute(l:outraw, "\_s*$", "", "")
-    return [l:outtrimmed,"\n"]
+    return l:outtrimmed
 endfunction

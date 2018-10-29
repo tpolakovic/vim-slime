@@ -14,7 +14,7 @@ function! Remove_line_comments(lines)
     return filter(copy(a:lines), "!Is_comment(v:val)")
 endfunction
 
-function! _EscapeText_futhark(text)
+function! _EscapeText_fut(text)
     let l:lines = Lines(l:text)
     let l:lines = Remove_line_comments(l:lines)
     let l:outraw = Unlines(l:lines)
